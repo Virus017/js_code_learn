@@ -35,4 +35,29 @@ const myFunction = function(){
 
 console.log(typeof anotherId);
 
+
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// *****************************************************
+
+// Stack (primitive) Heap (non-premitive)
+
+let ytName = "devv"
+
+let otherName = ytName
+otherName = "devv17"
+
+console.log(ytName)
+console.log(otherName)
+
+// for heap
+
+let userOne = {
+    email: "dev@gmail.com",
+    id: 65556
+}
+let userTwo = userOne
+userOne.id = 8415
+
+console.log(userOne.id)
+console.log(userTwo.id)
